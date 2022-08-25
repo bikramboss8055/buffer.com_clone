@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    border: 2px solid orange;
+    height: 5655px;
+}
+.header{
+/* border: 1px solid red; */
+display: flex;
+justify-content: center;
+
+}
+#navbar{
+    /* border: 1px solid; */
+    height: 52px;
+    width: 1400px;
+    display: flex;
+    font-size: 1.2rem;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+#navbar>div>img{
+    width: 130px;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    /* padding: 0 10px; */
+    /* margin-right:200px; */
+}
+.logo>span{
+    padding:0 10px;
+    margin-bottom: 2px;
+}
+.logo>a{
+    
+    font-size: .9rem;
+    font-weight:bold;
+   
+}
+#ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 590px;
+    justify-content: space-between  ;
+    margin-right:0px;
+    
+    
+}
+
+#ul span{
+   font-size: 16px; 
+    transform: rotate(180deg);
+}
+
+#start{
+    
+    padding: 12px 25px;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color:#2C4BFF;
+    border: none;
+}
+#start>a{
+    color: white;
+    font-size: 1.2rem;
+}
+
+#na{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    gap:30px;
+    font-size: large;
+    
+}
+#na img{
+    width:4%;
+}
+
+#bfr{
+    width:80%;
+    margin:auto;
+    margin-top: 100px;
+    font-size: larger;
+}
+#hr{
+    margin-top: 50px;
+}
+#con1{
+    width:80%;
+    margin: auto;
+    display:flex;
+    gap:20px;
+    margin-top: 60px;
+}
+#con11{
+    display:flex;
+    margin-top:0px;
+}
+#con111{
+    display:flex;
+    gap:20px;
+    margin-top:30px;
+
+}
+#anc{
+font-size: 30px;
+margin-bottom: 30px;
+}
+#p{
+    margin-top: 20px;
+}
+#manag{
+    display:flex;
+    width:100%;
+    height:70px;
+    gap:10px;
+    margin-top: 10px;
+}
+#manag>img{
+    border-radius: 40px;
+    border: #2C4BFF solid;
+}
+</style>
+</head>
+
+
+<body>
+    <head>
+        <title>Buffer Blog - Thoughts on Social Media & Online Marketing</title>
+        <link rel="icon" type="image/svg+xml" href="https://www.buffer.com/static/icons/favicon.svg">
+        <script src="https://kit.fontawesome.com/0a9e5ea525.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../style/blog_homepage.css">
+    </head>
+    <div class="header">
+        <div id="navbar">
+            <div class="logo">
+                <img src="https://buffer.com/resources/content/images/2021/02/buffer-logo.svg" alt="Buffer Resources">
+                <span>|</span>
+                <a href="">BLOG</a>
+            </div>
+            <div class="logo">
+                <ul id="ul">
+                    <li><a href="">Guides</a></li>
+                    <li><a href="">Trends</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="work.html">Work Culture</a></li>
+                    <li><a href="">All categories <span><i class="fa-solid fa-angle-down"></i></span></a>
+                    </li>
+                </ul>
+                <div id="dropdown"></div>
+            </div>
+            <div class="logo">
+                <a href=""><i style="font-size:2rem;" class="fa-solid fa-magnifying-glass"></i></a>
+                <button id="start"><a href="">Get started for free </a></button>
+            </div>
+        </div>
+    </div>    
+    <div id="bfr">
+         <h1>Buffer News</h1>
+         <p>A collection of posts on Buffer News</p>
+         <hr id="hr">
+    </div> 
+    <div id="con1">
+        <div><a href=""><img src="https://buffer.com/resources/content/images/size/w600/2022/07/Blog-Graphic--2-.png" alt=""></a></div>
+        <div>
+            <div id="con11"><a href="">Publications></a>
+            <a href="">resources</a></div>
+            <a id="anc" href="">Grow Your Traffic Originally: <br> introducing Google Business Profiles</a>
+            <p id="p">79% of brands don’t publish regularly on Google Business Profiles—but you can with Buffer. Schedule, manage, and publish all your posts from one place with Google Business Profiles in Buffer.</p>
+            <div id="con111">
+                <p>Jul 27, 2022</p>
+                <p>5 min read<ul>
+                <li>Buffer News</li>
+            </div>
+            <div id="manag">
+                <img src="https://buffer.com/resources/content/images/size/w300/2022/05/Headshots-on-brand-colors-2.png" alt="Phill Agnew">
+                <div>
+                    <h1>Phill Agnew</h1>
+                    <a href="">Senir Product manager @Buffer</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
+<script src="news.js"></script>
