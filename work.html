@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffer//.workCulture</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    border: 2px solid orange;
+    height: 5655px;
+}
+.header{
+/* border: 1px solid red; */
+display: flex;
+justify-content: center;
+
+}
+#navbar{
+    /* border: 1px solid; */
+    height: 52px;
+    width: 1400px;
+    display: flex;
+    font-size: 1.2rem;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+#navbar>div>img{
+    width: 130px;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    /* padding: 0 10px; */
+    /* margin-right:200px; */
+}
+.logo>span{
+    padding:0 10px;
+    margin-bottom: 2px;
+}
+.logo>a{
+    
+    font-size: .9rem;
+    font-weight:bold;
+   
+}
+#ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 590px;
+    justify-content: space-between  ;
+    margin-right:0px;
+    
+    
+}
+
+#ul span{
+   font-size: 16px; 
+    transform: rotate(180deg);
+}
+
+#start{
+    
+    padding: 12px 25px;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color:#2C4BFF;
+    border: none;
+}
+#start>a{
+    color: white;
+    font-size: 1.2rem;
+}
+
+#na{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    gap:30px;
+    font-size: large;
+    
+}
+
+ #open{
+    width:100%;
+    margin:auto;
+    height:350px;
+    text-align: center;
+    align-items: center;
+    background: hsl(0, 17%, 95%);
+    padding-top: 40px;
+    margin-top: 100px;
+}
+#open p{
+    width:35%;
+    margin: auto;
+    font-size: large;
+    line-height: 27px;
+}
+#work{
+    width: 70%;
+    margin: auto;
+    display:flex;
+    gap:10px;
+}
+#work img{
+    width:100%;
+}
+#con1{
+    width:80%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    margin-top: 60px;
+}
+#con1 img{
+    width:100%;
+    height: 100%;
+}
+#con11{
+    display:flex;
+    margin-top:0px;
+}
+#con111{
+    display:flex;
+    gap:20px;
+    margin-top:30px;
+
+}
+#anc{
+font-size: 30px;
+margin-bottom: 30px;
+}
+#p{
+    margin-top: 20px;
+    width:100%
+}
+#manag{
+    display:flex;
+    width:100%;
+    height:100px;
+    gap:10px;
+    margin-top: 30px;
+}
+#manag img{
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+    border: #2C4BFF solid;
+}
+
+#posts{
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:40px;
+    margin-top: 40px;
+}
+.s{
+    width:100%;
+    display: flex;
+    gap:20px;
+}
+.s img{
+    width:100%;
+}
+    </style>
+</head>
+<body>
+    <head>
+        <title>Buffer Blog - Thoughts on Social Media & Online Marketing</title>
+        <link rel="icon" type="image/svg+xml" href="https://www.buffer.com/static/icons/favicon.svg">
+        <script src="https://kit.fontawesome.com/0a9e5ea525.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="../style/blog_homepage.css"> -->
+    </head>
+    <div class="header">
+        <div id="navbar">
+            <div class="logo">
+                <img src="https://buffer.com/resources/content/images/2021/02/buffer-logo.svg" alt="Buffer Resources">
+                <span>|</span>
+                <a href="">BLOG</a>
+            </div>
+            <div class="logo">
+                <ul id="ul">
+                    <li><a href="">Guides</a></li>
+                    <li><a href="">Trends</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="work.html">Work Culture</a></li>
+                    <li><a href="">All categories <span><i class="fa-solid fa-angle-down"></i></span></a>
+                    </li>
+                </ul>
+                <div id="dropdown"></div>
+            </div>
+            <div class="logo">
+                <a href=""><i style="font-size:2rem;" class="fa-solid fa-magnifying-glass"></i></a>
+                <button id="start"><a href="">Get started for free </a></button>
+            </div>
+        </div>
+    </div>    
+    <div id="open">
+        <img src="https://buffer.com/resources/content/images/2020/06/open.svg" alt="">
+        <p>Join us as we share what we’re learning as we build a company that approaches work from a fresh perspective. We write about workplace culture, our finances, and our business decisions and strategies.</p>
+    </div>
+    <!--  -->
+    <div id="con1">
+        <div><a href="https://buffer.com/resources/four-day-work-week/"><img src="https://buffer.com/resources/content/images/size/w2000/2022/07/alevision-co-LtsrNWZ6LYM-unsplash.jpg" alt=""></a></div>
+        <div>
+            <a id="anc" href="">What It's Like Working a Four Day Work Week and How We Spend Fridays Off</a>
+            <p id="p">Have you ever wondered what it's like to have a four day workweek? In this post, I detail the positive experience I've had switching to a shorter workweek while also sharing how some of my coworkers spend their Fridays off.</p>
+            <div id="con111">
+                <p>Jul 27, 2022</p>
+                <p>8 min read<ul>
+                <li>open</li>
+            </div>
+            <div id="manag">
+                <img src="https://buffer.com/resources/content/images/size/w300/2022/03/Untitled-design.png" alt="Phill Agnew">
+                <div>
+                    <h1>Umber Bhatti</h1>
+                    <a href="https://buffer.com/resources/four-day-work-week/">Content Writer @Buffer</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div id="con1">
+        <div><a href=""><img src="https://buffer.com/resources/content/images/size/w2000/2022/06/mercedes-mehling-SKLSceAHpR0-unsplash.jpg" alt=""></a></div>
+        <div>
+            <!-- <div id="con11"><a href="">Publications></a>
+            <a href="">resources</a></div> -->
+            <a id="anc" href="https://buffer.com/resources/2022-diversity-report/">A Pride Fireside Chat: Coming Out at Work and How to Support LGBTQ+ Colleagues</a>
+            <p id="p">Pride month is celebrated annually in June to honor the 1969 Stonewall riots, and the work towards equality for the LGBTQ community. In June of 1969, patrons and supporters of the Stonewall Inn in New York City responded against police harassment and persecution, resulting in the historic uprising. These riots</p>
+            <div id="con111">
+                <p>Jul 17, 2022</p>
+                <p>8 min read<ul>
+                <li>open</li>
+            </div>
+            <div id="manag">
+                <img src="https://buffer.com/resources/content/images/size/w300/2022/06/Katie_G.png" alt="Phill Agnew">
+                <div>
+                    <h1>Katie Gilmur</h1>
+                    <a href="https://buffer.com/resources/2022-diversity-report/">Dei manager @Buffer</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div id="con1">
+        <div><a href=""><img src="https://buffer.com/resources/content/images/size/w2000/2022/06/olga-thelavart-RyrFRsVoe2Q-unsplash.jpg" alt=""></a></div>
+        <div>
+            <!-- <div id="con11"><a href="">Publications></a>
+            <a href="">resources</a></div> -->
+            <a id="anc" href="https://buffer.com/resources/work-blueprints/">Work Blueprints: What They Are and How We Use Them at Buffer</a>
+            <p id="p">Do you ever wish there was a shortcut to better understanding everyone you worked with? I definite have. At Buffer, we've had assorted documents to communicate work preferences over the years. Some folks have kicked off specific documents called operating manuals or leadership blueprints. Still, we've never had anything centralized</p>
+            <div id="con111">
+                <p>Aug 27, 2022</p>
+                <p>11 min read<ul>
+                <li>open</li>
+            </div>
+            <div id="manag">
+                <img src="https://buffer.com/resources/content/images/size/w300/2020/07/Hailley.png" alt="Phill Agnew">
+                <div>
+                    <h1>Hailley Griffis</h1>
+                    <a href="https://buffer.com/resources/work-blueprints/">Head Of Public Realtion @Buffer</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div id="con1">
+        <div><a href="https://buffer.com/resources/new-product-launch-metrics/"><img src="https://buffer.com/resources/content/images/size/w2000/2022/06/igor-jSFQvSOmU44-unsplash.jpg" alt=""></a></div>
+        <div>
+            <!-- <div id="con11"><a href="">Publications></a>
+            <a href="">resources</a></div> -->
+            <a id="anc" href="https://buffer.com/resources/new-product-launch-metrics/">How is Our New Product Performing? A Transparent Look at our Launch Metrics</a>
+            <p id="p">In early 2021, we started talking about building a new tool at Buffer. We wanted to build a new feature to allow our customers to create beautiful micro sites easily. We wanted to create a simple, intuitive, and delightful experience. This new feature would be the first time we'd venture</p>
+            <div id="con111">
+                <p>Jul 27, 2022</p>
+                <p>8 min read<ul>
+                <li>open</li>
+            </div>
+            <div id="manag">
+                <img src="https://buffer.com/resources/content/images/size/w300/2022/06/Diego.png" alt="Phill Agnew">
+                <div>
+                    <h1>Diego Sanchez</h1>
+                    <a href="https://buffer.com/resources/new-product-launch-metrics/">Senior Product Manger @Buffer</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div id="con1">
+        <div><a href="https://buffer.com/resources/2022-diversity-report/"><img src="https://buffer.com/resources/content/images/size/w2000/2022/06/photos-by-lanty-zUU73lEdcBU-unsplash.jpg" alt=""></a></div>
+        <div>
+            <!-- <div id="con11"><a href="">Publications></a>
+            <a href="">resources</a></div> -->
+            <a id="anc" href="https://buffer.com/resources/2022-diversity-report/">Our 2022 Diversity, Equity and Inclusion Report</a>
+            <p id="p">In this post we share how we collected our DEI data, used it to identify focus areas, and formulated a roadmap to support our goals, ensuring DEI is a foundational component of our company strategy.</p>
+            <div id="con111">
+                <p>Jul 27, 2022</p>
+                <p>8 min read<ul>
+                <li>open</li>
+            </div>
+            <div id="manag">
+                <img src="https://buffer.com/resources/content/images/size/w300/2022/03/Untitled-design.png" alt="Phill Agnew">
+                <div>
+                    <h1>Umber Bhatti</h1>
+                    <a href="https://buffer.com/resources/2022-diversity-report/">Dei Manager @Buffer</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div id="con1">
+        <div><a href="https://buffer.com/resources/2021-charitable-contribution/"><img src="https://buffer.com/resources/content/images/size/w2000/2022/05/natalie-grainger-xD3cF8ATJAM-unsplash.jpg" alt=""></a></div>
+        <div>
+            <!-- <div id="con11"><a href="">Publications></a>
+            <a href="">resources</a></div> -->
+            <a id="anc" href="https://buffer.com/resources/2021-charitable-contribution/">Our Annual Charitable Contribution and How We Decide Which Charities to Support</a>
+            <p id="p">Seeking opportunities to give back has always been part of the Buffer DNA. We started the wonderful tradition of profit sharing and charitable contributions at the end of 2017. Since then, we've been in the privileged position to make donations to charitable organizations every year as part of our profit</p>
+            <div id="con111">
+                <p>Jul 21, 2022</p>
+                <p>6 min read<ul>
+                <li>open</li>
+            </div>
+            <div id="manag">
+                <img src="https://buffer.com/resources/content/images/size/w300/2022/05/Juliet_Buffer.png" alt="Phill Agnew">
+                <div>
+                    <h1>Juliet Chen</h1>
+                    <a href="https://buffer.com/resources/2021-charitable-contribution/">Senior Customer Advocate @Buffer</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+   <!-- <div id="posts">
+           <div class="s">
+            <div><a href=""><img src="https://buffer.com/resources/content/images/size/w600/2022/05/spacex.jpeg" alt=""></a></div>
+            <div>
+                <div><a href="">What We’ve Learned Launching a New Product as an 11-Year-Old Company</a></div>
+                <div>
+                    <p>Jul 21, 2022</p>
+                    <p>6 min read<ul>
+                    <li>open</li>
+                </div>
+            </div>
+           </div>
+           <div class="s">
+            <div><a href=""><img src="https://buffer.com/resources/content/images/size/w600/2022/05/spacex.jpeg" alt=""></a></div>
+            <div>
+                <div><a href="">What We’ve Learned Launching a New Product as an 11-Year-Old Company</a></div>
+                <div>
+                    <p>Jul 21, 2022</p>
+                    <p>6 min read<ul>
+                    <li>open</li>
+                </div>
+            </div>
+           </div>
+   </div> -->
+</body>
+</html>
+<script src="work.js"></script>
