@@ -69,7 +69,18 @@ justify-content: center;
     background-color:#2C4BFF;
     border: none;
 }
+#start:hover{
+    background-color: #1d3adc;
+}
 #start>a{
     color: white;
     font-size: 1.2rem;
+}
+#show_category{
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+}
+#show_category:hover #arrow{
+transform: rotate(180deg);
 }
