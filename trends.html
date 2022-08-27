@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>news</title>
+    <title>Document</title>
     <style>
-*{
+        *{
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-a{
+        a{
     text-decoration: none;
     color: black;
 }
@@ -83,19 +83,6 @@ justify-content: center;
     color: white;
     font-size: 1.2rem;
 }
-
-#na{
-    display:flex;
-    align-items: center;
-    text-align: center;
-    gap:30px;
-    font-size: large;
-    
-}
-#na img{
-    width:4%;
-}
-
 #bfr{
     width:80%;
     margin:auto;
@@ -112,6 +99,9 @@ justify-content: center;
     gap:20px;
     margin-top: 60px;
 }
+#con1 img{
+    width:100%;
+}
 #con11{
     display:flex;
     margin-top:0px;
@@ -125,10 +115,9 @@ justify-content: center;
 #anc{
 font-size: 30px;
 margin-bottom: 30px;
+font-weight: 800;
 }
-#p{
-    margin-top: 20px;
-}
+
 #manag{
     display:flex;
     width:100%;
@@ -137,7 +126,8 @@ margin-bottom: 30px;
     margin-top: 10px;
 }
 #manag>img{
-    border-radius: 40px;
+    width:10%;
+    border-radius: 50%;
     border: #2C4BFF solid;
 }
 #main{
@@ -191,6 +181,15 @@ hr{
     font-weight: bold;
     border-radius: 10px;
 }
+
+#manag1{
+   display: flex;
+   margin-top: 20px;
+}
+#manag1>img{
+  width:10%;
+  border-radius: 50%;
+}
 #social{
     width:70%;
     margin:auto;
@@ -200,9 +199,8 @@ hr{
     margin-top: 50px;
 }
 #social img{
-    width:100%;
+    width: 100%;
 }
-
 #so{
     display: flex;
     gap: 20px;
@@ -215,7 +213,11 @@ hr{
 }
 #so1 img{
     width:10%;
+    height: 10%;
     border-radius: 50%;
+}
+h5{
+    margin-top: 20px;
 }
 #but{
     width:200px;
@@ -236,20 +238,69 @@ hr{
     background: rgb(43, 234, 116);
     box-shadow:#0d2299;
 }
-h5{
-    margin-top: 30px;
+.post_section{
+    display:grid;
+    justify-items: center;
 }
-</style>
+.post_section>div{
+    width: 1220px;
+    height:1050px;
+
+    
+}
+.post_section >div:first-child{
+    height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.post_section>div:last-child{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+    height: 1100px;
+    box-sizing:content-box;
+    margin-top: 10px;
+    
+}
+.post_title{
+    padding: 5px 20px 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    margin-top: 40px;
+
+}
+
+.post_title:hover{
+    
+    border-bottom: 3px solid #2c4bff; 
+}
+#all_post>div{
+    padding: 5px 5px;
+}
+#all_post>div:hover .post_image{
+    transform:scale(1.01);
+    z-index: 1;
+}
+#all_post>div:hover h3{
+    text-decoration: underline;
+}
+.innerdiv3{
+    display: flex;
+    align-items: center;
+    
+
+}
+.innerdiv3>div{
+    width:fit-content;
+    display: flex;
+    
+    align-items: center;
+    color: #636363;
+}
+
+    </style>
 </head>
-
-
 <body>
-    <head>
-        <title>Buffer Blog - Thoughts on Social Media & Online Marketing</title>
-        <link rel="icon" type="image/svg+xml" href="https://www.buffer.com/static/icons/favicon.svg">
-        <script src="https://kit.fontawesome.com/0a9e5ea525.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../style/blog_homepage.css">
-    </head>
     <div class="header">
         <div id="navbar">
             <div class="logo">
@@ -273,72 +324,85 @@ h5{
                 <button id="start"><a href="">Get started for free </a></button>
             </div>
         </div>
-    </div>    
-    <div id="bfr">
-         <h1>Buffer News</h1>
-         <p>A collection of posts on Buffer News</p>
-         <hr id="hr">
-    </div> 
-    <div id="con1">
-        <div><a href=""><img src="https://buffer.com/resources/content/images/size/w600/2022/07/Blog-Graphic--2-.png" alt=""></a></div>
-        <div>
-            <div id="con11"><a href="">Publications></a>
-            <a href="">resources</a></div>
-            <a id="anc" href="">Grow Your Traffic Originally: <br> introducing Google Business Profiles</a>
-            <p id="p">79% of brands don’t publish regularly on Google Business Profiles—but you can with Buffer. Schedule, manage, and publish all your posts from one place with Google Business Profiles in Buffer.</p>
-            <div id="con111">
-                <p>Jul 27, 2022</p>
-                <p>5 min read<ul>
-                <li>Buffer News</li>
-            </div>
-            <div id="manag">
-                <img src="https://buffer.com/resources/content/images/size/w300/2022/05/Headshots-on-brand-colors-2.png" alt="Phill Agnew">
-                <div>
-                    <h1>Phill Agnew</h1>
-                    <a href="">Senir Product manager @Buffer</a>
-                </div>
-            </div>
-        </div>
-    </div>  
- <!-- <div>*****8</div> -->
-<!-- <div>*****8</div> -->
-<!-- <div>*****8</div> -->
+     </div>
 
+     <div id="bfr">
+        <h1>News and Trends</h1>
+        <p>A collection of posts on Buffer News and Trends</p>
+        <hr id="hr">
+   </div> 
+   <div id="con1">
+       <div><a href=""><img src="https://buffer.com/resources/content/images/size/w600/resources/wp-content/uploads/2019/10/cropped-stories_mailing_hero@2x.png" alt=""></a></div>
+       <div>
+           <div id="con11"><a href="">Publications ></a>
+           <a href="">resources</a></div>
+           <a id="anc" href="">How to Schedule Instagram Stories</a>
+           <p >More than 500 million Instagrammers use Stories every day, and the format has opened up a wealth of content opportunities for marketers.</p>
+           <div id="con111">
+               <p>Jul 27, 2022</p>
+               <p>5 min read<ul>
+               <li>Buffer News</li>
+           </div>
+           <div id="manag">
+               <img src="https://buffer.com/resources/content/images/size/w300/avatar/a8d8b775c4187fbfc6c84c64d93e5370.jpeg" alt="Phill Agnew">
+               <div>
+                   <h1>Ash Read</h1>
+                   <a href="">Head Of Content @Buffer</a>
+               </div>
+           </div>
+       </div>
+   </div> 
+
+    <!-- <div>*****8</div> -->
+    <!-- <div>*****8</div> -->
+    <!-- <div>*****8</div> -->
+    <div class="post_section" style="border:1px solid">
+        <div>
+            <button id="latest_updates" class="post_title">Latest Updates</button>
+            <button id="flow" class="post_title">Flow</button>
+            <button id="open_blog" class="post_title">Open blog</button>
+            <button id="breaking_brand" class="post_title">Breaking Brand</button>
+            <button id="social_media" class="post_title">Science of Social Media</button>
+            <button id="overflow" class="post_title">Overflow</button>
+        </div>
+        <div id="all_post"></div>
+    </div>
     <div id="main">
         <div>
-            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2022/02/Blog-graphic--1-.png" alt="">
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2018/06/igtv.jpg" alt="">
         </div>
         <div>
             <a href="">Publications </a>
-            <h4><a href="">Simplify your marketing workflows for TikTok</a></h4>
-            <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+            <h4><a href="">With IGTV, Instagram is Becoming Television for the Mobile Generation</a></h4>
+            <div id="p"><p>Jun 7, 2017</p><p>4 min read</p><p>Guides & Courses</p></div>
         </div>
         <div>
-            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2021/11/ContentIntegrationsBuffer.png" alt="">
-        </div>
-        <div>
-            <a href="">Publications </a>
-            <h4><a href="">A Day in the Life of a Social Media Manager</a></h4>
-            <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
-        </div>
-        <div>
-            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2022/06/tiktok-scheduling.jpg" alt="">
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2018/05/ig.png" alt="">
         </div>
         <div>
             <a href="">Publications </a>
-            <h4><a href="">New from Buffer : start Page</a></h4>
-            <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+            <h4><a href="">How to Share Posts From the Instagram Feed to Stories</a></h4>
+            <div id="p"><p>Jan 2, 2018</p><p>11 min read</p><p>Guides & Courses</p></div>
         </div>
         <div>
-            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2022/07/Header-1--1-.jpeg" alt="">
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2016/04/Mark-Zuckerberg-F8-Picture.jpg" alt="">
         </div>
         <div>
             <a href="">Publications </a>
-            <h4><a href="">Introducing new social Media Calender</a></h4>
-            <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+            <h4><a href="">Facebook F8 2018: What Marketers Need to Know Ahead of Facebook’s Annual Conference</a></h4>
+            <div id="p"><p>Aug 7, 2017</p><p>9 min read</p><p>Guides & Courses</p></div>
+        </div>
+        <div>
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2018/01/samuel-zeller-379406.jpg" alt="">
+        </div>
+        <div>
+            <a href="">Publications </a>
+            <h4><a href="">Do 3rd-Party Social Media Tools Negatively Affect Reach and Engagement? Our 200+ Post Experiment and Results</a></h4>
+            <div id="p"><p>Oct 11, 2018</p><p>5 min read</p><p>Guides & Courses</p></div>
         </div>
     </div>
     <hr>
+
     <div id="sub">
         <h1>Subscribe to our newsletter</h1>
         <p>We’ll keep you in the loop on our best advice and strategies for social media marketing and growing a small business.</p>
@@ -347,12 +411,15 @@ h5{
             <button id="butn" onclick="click()">Subscribe</button>
         </div>
     </div>
+   
+
+
     <div id="social">
         <div>
-            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2021/08/1200x675_Blog.jpg" alt="">
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2014/11/placeit-1.jpg" alt="">
             <div><a href="">Publications > </a><a href="">Resources</a></div>
-            <h5><a href="">25 Days, 25 Expert Social Media Growth Strategies [New Email Course for Marketers]</a></h5>
-            <div id="so"><p>July 22,2017</p><p>3min raad</p><p>Guides& courses</p></div>
+            <h5>Decoding the Facebook Algorithm: A Fully Up-to-Date List of the Algorithm Factors and Changes</a></h5>
+            <div id="so"><p>July 22,2017</p><p>7min read</p><p>Guides& courses</p></div>
             <p>What’s working for you on social media these days? One of our goals at Buffer is to always be iterating and experimenting [https://buffer.</p>
             <div id="so1">
                 <img src="https://buffer.com/resources/content/images/size/w300/avatar/de47013be535d77b4d13607136c4a851.jpeg" alt="">
@@ -360,7 +427,7 @@ h5{
             </div>
         </div>
         <div>
-            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2021/01/1200x628_Blog_post.png" alt="">
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2017/06/Social-Media-Day-2017.jpg" alt="">
             <div><a href="">Publications > </a><a href="">Resources</a></div>
             <h5><a href="">How to Use Instagram Search and Explore to Boost Your Instagram Marketing</a></h5>
             <div id="so"><p>July 22,2017</p><p>7min read</p><p>Guides& courses</p></div>
@@ -371,10 +438,10 @@ h5{
             </div>
         </div>
         <div>
-            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2020/11/1200x628_Blog_post.png" alt="">
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2017/04/facebook-camera-ar-platform-mark.jpg" alt="">
             <div><a href="">Publications > </a><a href="">Resources</a></div>
             <h5><a href="">The Complete Guide to Instagram Ads: A Step-by-Step Guide to Advertising on Instagram</a></h5>
-            <div id="so"><p>July 22,2017</p><p>5min read</p><p>Guides& courses</p></div>
+            <div id="so"><p>July 22,2017</p><p>5 min read</p><p>Guides& courses</p></div>
             <p>Instagram places a big emphasis on search and discovery of content. It’s one of the few social media platforms with a Search and Explore</p>
             <div id="so1">
                 <img src="https://www.gravatar.com/avatar/4798617496366fdde2c1c3b69d9293e9?s=250&d=mm&r=x" alt="">
@@ -382,10 +449,10 @@ h5{
             </div>
         </div>
         <div>
-            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2020/08/1200x628_Blog_post@2x.png" alt="">
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2016/04/Facebook-10-Year-Plan.jpg" alt="">
             <div><a href="">Publications > </a><a href="">Resources</a></div>
             <h5><a href="">So…Is That Good? The Complete Beginner’s Guide to Benchmarking on Social Media </a></h5>
-            <div id="so"><p>July 22,2017</p><p>6min read</p><p>Guides& courses</p></div>
+            <div id="so"><p>July 22,2017</p><p>3min read</p><p>Guides& courses</p></div>
             <p>If I were to tell you that a recent tweet of mine received 20 clicks, what would you think? Maybe 20 clicks sounds like a</p>
             <div id="so1">
                 <img src="https://buffer.com/resources/content/images/size/w100/2020/06/Kevan-Lee.png" alt="">
@@ -393,7 +460,7 @@ h5{
             </div>
         </div>
         <div>
-            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2019/08/cropped-hashtag_manager@2x.png" alt="">
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2017/03/fb-stories.jpg" alt="">
             <div><a href="">Publications > </a><a href="">Resources</a></div>
             <h5><a href="">25 Days, 25 Expert Social Media Growth Strategies [New Email Course for Marketers]</a></h5>
             <div id="so"><p>July 22,2017</p><p>5min read</p><p>Guides& courses</p></div>
@@ -404,7 +471,7 @@ h5{
             </div>
         </div>
         <div>
-            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2022/07/Header-1--1-.jpeg" alt="">
+            <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2017/03/Square-Video-vs-Landscape-Video-A-New-Buffer-and-Animoto-Study.jpg" alt="">
             <div><a href="">Publications > </a><a href="">Resources</a></div>
             <h5><a href="">Instagram for Business: 8 Tips to Grow Your Audience</a></h5>
             <div id="so"><p>July 22,2017</p><p>2min read</p><p>Guides& courses</p></div>
@@ -419,4 +486,8 @@ h5{
 
 </body>
 </html>
-<script src="../shivaScripts/news.js"></script>
+<!-- <script type="module">
+    import footer from '../components/blog_footer.js';
+    document.getElementById('footer').innerHTML =(footer())
+</script> -->
+<script src="../shivaScripts/trends.js"></script>
