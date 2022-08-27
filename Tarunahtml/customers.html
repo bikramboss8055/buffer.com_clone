@@ -1,0 +1,599 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <style>
+         #head{
+        display: flex;
+        height: 115px;
+        position:Sticky;
+       
+    }
+    #img{
+        height: 50%;
+        width: 107px;
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+    #img>img{
+        height: 100%;
+        width: 100%;
+    }
+    #img1{
+        height: 12%;
+        width: 30px;
+        margin-top: 50px;
+    }
+    #img1>img{
+        height: 100%;
+        width: 100%;
+    }
+    #keys{
+        height: 70%;
+        width: 520px;
+        display: flex;
+        gap: 53px;
+        margin-left: 15%;
+        margin-top: 28px;
+    }
+    #keys h1:hover{
+       border-bottom: 3px solid #2c4bff;
+       color:#2c4bff
+    }
+    h1{
+        font-weight: lighter;
+        font-size: 21px;
+    }
+    #login{
+        margin-left: 130px;
+        margin-top: 28px;
+        color: rgb(33, 70, 192);
+    }
+    #login:hover{
+        color: rgb(99, 126, 214);
+        border-bottom: 1px solid #2c4bff;
+    }
+    #start{
+        height: 50px;
+        width: 190px;
+        margin-left: 20px;
+        margin-top: 30px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #start:hover{
+      background-color: rgb(54, 90, 206);
+    }
+        #top{
+            text-align: center;
+            margin-top: 140px;
+        }
+        #top h3{
+           color:blue
+        }
+        #top h1{
+           font-weight: bolder;
+           font-size: 40px;
+        }
+        #top p{
+            font-size: 18px;
+        }
+        #box{
+            margin-top:50px; 
+            padding-top: 60px;
+           border:4px solid blue;
+           height:360px;
+           width:65%;
+           margin-left:18%;
+           text-align:center;
+           font-size:30px;
+        }
+        #box>img{
+            width:40%; 
+        }
+        #box_a{
+            margin-top:50px;
+            padding-top: 60px;
+           border:4px solid red;
+           height:360px;
+           width:65%;
+           margin-left:18%;
+           text-align:center;
+           font-size:30px;
+        }
+        #box_a>img{
+            width:12%; 
+        }
+        #box_b{
+            margin-top:50px;
+            padding-top: 60px;
+           border:4px solid orange;
+           height:360px;
+           width:65%;
+           margin-left:18%;
+           text-align:center;
+           font-size:30px;
+        }
+        #box_b>img{
+            width:12%; 
+        }
+        #box_c{
+           margin-top:50px;
+           padding-top: 60px;
+           border:4px solid blue;
+           height:360px;
+           width:65%;
+           margin-left:18%;
+           text-align:center;
+           font-size:30px;
+        }
+        #box_c>img{
+            width:25%; 
+        }
+        #box_d>img{
+            width:15%; 
+        }
+        #box_d{
+            margin-top:50px;
+            padding-top: 60px;
+           border:4px solid rgb(241, 97, 121);
+           height:360px;
+           width:65%;
+           margin-left:18%;
+           text-align:center;
+           font-size:30px;
+        }
+        #box_e>img{
+            width:10%; 
+        }
+        #box_e{
+            margin-top:50px;
+            padding-top: 60px;
+           border:4px solid rgb(125, 241, 125);
+           height:360px;
+           width:65%;
+           margin-left:18%;
+           text-align:center;
+           font-size:30px;
+        }
+        #box_f>img{
+            width:10%; 
+        }
+        #box_f{
+            margin-top:50px;
+            padding-top: 60px;
+           border:4px solid blue;
+           height:360px;
+           width:65%;
+           margin-left:18%;
+           text-align:center;
+           font-size:30px;
+        }
+        #box_g>img{
+             width:28%; 
+        }
+        #box_g{
+            margin-top:50px;
+            padding-top: 60px;
+            border:4px solid orangered;
+           height:360px;
+           width:65%;
+           margin-left:18%;
+           text-align:center;
+           font-size:30px;
+        }
+        
+        #box_h{
+            margin-top:50px;
+            padding-top: 60px;
+           border:4px solid rgb(114, 248, 114);
+           height:360px;
+           width:65%;
+           margin-left:18%;
+           text-align:center;
+           font-size:30px;
+        }
+       .hi{
+        width:5%;
+        display:flex;
+        margin: auto;
+        margin-top:5%;
+         
+       
+       }
+       .hi>p{
+        font-size: 15px;
+        margin-left: 14px;
+       }
+      #bottom{
+        border:2px solid;
+        height: 250px;
+        margin-top:110px;
+      }
+    #navbar11{
+    height: 450px;
+    width: 100%;
+    display: flex;
+   }
+   #navbar11>#box1{
+    height: 100%;
+    width: 500px;
+   }
+   #navbar11>#box2{
+    height: 100%;
+    width: 210px;
+   }
+   #navbar11>#box3{
+    height: 100%;
+    width: 210px;
+   }
+   #navbar11>#box4{
+    height: 100%;
+    width: 210px;
+   }
+   #navbar11>#box5{
+    height: 100%;
+    width: 210px;
+   }
+   #navbar11>#box1>#buffer{
+    height: 20%;
+    width: 100%;
+    margin-top: 80px;
+   }
+   #navbar11>#box1>#image{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+   }
+   #navbar11>#box1>#write{
+    height: 5%;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+   }
+   #navbar11>#box1>#button{
+    height: 7%;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+   }
+   #navbar11>#box1>#write2{
+    height: 5%;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+   }
+   #navbar11>#box1>#buffer>h1{
+    font-size: 45px;
+    font-weight: bolder;
+    margin-left: 70px;
+   }
+   #navbar11>#box1>#image>#img1{
+    height: 65%;
+    margin-top: 5px;
+    margin-left: 70px;
+    width: 22px;
+   }
+   #navbar11>#box1>#image>#img1>img{
+    height: 100%;
+    width: 100%;
+   }
+   #navbar11>#box1>#image>#img2{
+    height: 60%;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 10px;
+   }
+   #navbar11>#box1>#image>#img2>img{
+    height: 100%;
+    width: 100%;
+   }
+   #navbar11>#box1>#image>#img3{
+    height: 65%;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 20px;
+   }
+   #navbar11>#box1>#image>#img3>img{
+    height: 100%;
+    width: 100%;
+   }
+   #navbar11>#box1>#image>#img4{
+    height: 60%;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 20px;
+   }
+   #navbar11>#box1>#image>#img4>img{
+    height: 100%;
+    width: 100%;
+   }
+   #navbar11>#box1>#image>#img5{
+    height: 65%;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 20px;
+   }
+   #navbar11>#box1>#image>#img5>img{
+    height: 100%;
+    width: 100%;
+   }
+   #navbar11>#box1>#image>#img6{
+    height: 65%;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 20px;
+   }
+   #navbar11>#box1>#image>#img6>img{
+    height: 100%;
+    width: 100%;
+   }
+   #navbar11>#box1>#write>p{
+    margin-top: 0px;
+    font-size: 20px;
+    margin-left: 70px;
+    font-weight: bolder;
+   }
+   #navbar11>#box1>#write2>p{
+    margin-top: 0px;
+    font-size: 13px;
+    margin-left: 70px;
+   }
+   #navbar11>#box2>#h{
+    height: 300px;
+    width: 150px;
+    margin-top: 100px;
+    margin-left: 30px;
+   }
+   #navbar11>#box2>#h>h1{
+   font-size: 22px;
+   font-weight: bolder;
+   }
+   #navbar11>#box2>#h>p{
+   font-size: 20px;
+   }
+   #navbar11>#box3>#h{
+    height: 300px;
+    width: 120px;
+    margin-top: 100px;
+    margin-left: 30px;
+   }
+   #navbar11>#box3>#h>h1{
+   font-size: 22px;
+   font-weight: bolder;
+   }
+   #navbar11>#box3>#h>p{
+   font-size: 20px;
+   }
+   #navbar11>#box4>#h{
+    height: 300px;
+    width: 150px;
+    margin-top: 100px;
+    margin-left: 30px;
+   }
+   #navbar11>#box4>#h>h1{
+   font-size: 22px;
+   font-weight: bolder;
+   }
+   #navbar11>#box4>#h>p{
+   font-size: 20px;
+   }
+   #navbar11>#box5>#h{
+    height: 300px;
+    width: 150px;
+    margin-top: 100px;
+    margin-left: 30px;
+   }
+   #navbar11>#box5>#h>h1{
+   font-size: 22px;
+   font-weight: bolder;
+   }
+   #navbar11>#box5>#h>p{
+   font-size: 20px;
+   }
+
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="img">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <div id="img1">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCI+DQo8cGF0aCBmaWxsPSIjM2E3NWM0IiBkPSJtMCwwaDEyMDB2ODAwaC0xMjAweiIvPg0KPHBhdGggZmlsbD0iI2Y5ZGQxNiIgZD0ibTAsNDAwaDEyMDB2NDAwaC0xMjAweiIvPg0KPC9zdmc+DQo=" alt="">
+        </div>
+        <div id="keys">
+        <h1>Tools</h1>
+        <h1>Pricing</h1>
+        <h1>Blogs</h1>
+        <h1>About</h1>
+        <h1>Customers</h1>
+        </div>
+        <div id="login">
+            <h1>Log in</h1>
+        </div>
+        <div id="start">
+            <h1>Get started now</h1>
+        </div>
+       </div>
+   <div id="top">
+    <h3>YOU'RE IN GOOD COMPANY</h3>
+    <h1>Featured Customers</h1>
+    <p>See how big brands and growing businesses find social media success with Buffer</p>
+   </div> 
+
+    <div id="box">
+     <img src="https://buffer.com/static/caseStudies/campaign-monitor/campaign-monitor-logo.svg" alt=""/>
+     <p>"Buffer helps us measure what networks, and what content, is working best for us."</p>
+     <a href="resources.html">Read the case study</a>
+     <div class="hi">
+        <img src="https://buffer.com/static/caseStudies/campaign-monitor/aaron-beashel.svg" alt=""/>
+        <p>Aaron Beashel</p>
+    </div>
+    </div>
+
+    <div id="box_a">
+      <img src="https://buffer.com/static/caseStudies/fortune/fortune-logo.svg" alt=""/>
+      <p>"Buffer solved our problem. We don’t post in clusters anymore. We’ve been very happy with it."</p>
+      <a href="resources.html">Read the case study</a>
+      <div class="hi">
+        <img src="https://buffer.com/static/caseStudies/fortune/heather-muse.svg" alt=""/>
+        <p>Heather Muse</p>
+       </div>
+    </div>
+
+    <div id="box_b">
+        <img src="https://buffer.com/static/caseStudies/denver-broncos/denver-broncos-logo.svg" alt=""/>
+        <p>"Buffer allows everyone on our media team to contribute content and approval on everything that goes out."</p>
+        <a href="resources.html">Read the case study</a>
+        <div class="hi">
+            <img src="https://buffer.com/static/caseStudies/denver-broncos/ben-hunt.svg" alt=""/>
+            <p>Ben Hunt</p>
+        </div>
+    </div>
+
+    <div id="box_c">
+        <img src="https://buffer.com/static/caseStudies/seattle-times/seattle-times-logo.svg" alt=""/>
+        <p>"Since we’ve signed up with Buffer, we’ve had a 150% increase in page views from social media."</p>
+        <a href="resources.html">Read the case study</a>
+        <div class="hi">
+            <img src="https://buffer.com/static/caseStudies/seattle-times/andrew-macrae.svg" alt=""/>
+            <p>Andrew Macrae</p>
+        </div>
+    </div>
+
+    <div id="box_d">
+        <img src="https://buffer.com/static/caseStudies/about/about-logo.svg" alt=""/>
+        <p>"We’re seeing really good growth, and Buffer allows us to do that at scale more quickly."</p>
+        <a href="resources.html">Read the case study</a>
+        <div class="hi">
+            <img src="https://buffer.com/static/caseStudies/about/matthew-knell.svg" alt=""/>
+            <p>Matthew Knell</p>
+        </div>
+    </div>
+    <div id="box_e">
+        <img src="https://buffer.com/static/caseStudies/foster-coffee-company/foster-coffee-company-logo.svg" alt=""/>
+        <p>"Buffer enables us to plan, schedule and deliver our content in a consistent, yet flexible way"</p>
+        <a href="resources.html">Read the case study</a>
+        <div class="hi">
+            <img src="https://buffer.com/static/caseStudies/foster-coffee-company/nicholas-pidek.svg" alt=""/>
+            <p>Nicholas Pidek</p>
+        </div>
+    </div>
+
+    <div id="box_f">
+        <img src="https://buffer.com/static/caseStudies/car-next-door/car-next-door-logo.svg" alt=""/>
+        <p>"Social was so time-consuming. Buffer made it easy to set and forget our publishing schedule."</p>
+        <a href="resources.html">Read the case study</a>
+        <div class="hi">
+            <img src="https://buffer.com/static/caseStudies/car-next-door/shannon-barker.svg" alt=""/>
+            <p>Shannon Barker</p>
+        </div>
+    </div>
+
+    <div id="box_g">
+        <img src="https://buffer.com/static/caseStudies/marketeering-group/marketeering-group-logo.svg" alt=""/>
+        <p>"We run 350+ social profiles for our clients. I don’t even think what we do would be possible without Buffer."</p>
+        <a href="resources.html">Read the case study</a>
+        <div class="hi">
+            <img src="https://buffer.com/static/caseStudies/marketeering-group/jessica-dringman.svg" alt=""/>
+            <p>Jessica Dringman</p>
+        </div>
+    </div>
+
+    <div id="box_h">
+        <img src="https://buffer.com/static/caseStudies/social-hire/social-hire-logo.svg" alt=""/>
+        <p>"Buffer is an essential tool in our business. I shudder to think what life would be like without it."</p>
+        <a href="resources.html">Read the case study</a>
+        <div class="hi">
+            <img src="https://buffer.com/static/caseStudies/marketeering-group/jessica-dringman.svg" alt=""/>
+            <p>Tony Restell</p>
+        </div>
+    </div>
+    <div id="navbar11">
+        <div id="box1">
+            <div id="buffer"><h1>Buffer</h1></div>
+            <div id="image">
+                <div id="img1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0AhRAOWm_Z7eMWmDQJDeqxIKXq7YQyP2HDw&usqp=CAU" alt="">
+                </div>
+                <div id="img2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe2mp2fp6odkL-epUwRm6czIxm4XmQGRSaMA&usqp=CAU" alt="">
+                </div>
+                <div id="img3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGuBabGusUpnCm7RwA_3ymKOlpIqCxdtaAQ&usqp=CAU" alt="">
+                </div>
+
+<div id="img4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMBDmt3kxvC2J5wFEorahHqFc_yXOAwLAhbw&usqp=CAU" alt="">
+                </div>
+                <div id="img5">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEX///8AAAAvLy8MDAwbGxtCQkLS0tKPj4+Li4vh4eGHh4cgICDa2tpjY2P6+vqlpaV2dnY7OzuwsLDs7Oy6urpQUFBtbW0nJyfNzc3Gxsa0tLQ9PT1ISEiVlZU1NTUsLCyBgYFXV1cWFhZfX1+enp7w8PB6enqJSqg0AAAD80lEQVR4nO2d61rjIBBAu602qa29V2utva36/o+4u99u1TYMkERgkj3nN6ScT0MGGKDTAQAAAAAAAAAAAAAAaBLj5WE17Kni8Zg/fZvf6P6HUu7G3+E3Vuv3h3l9wVFqBwcPdQX7qQ2c1FRcpG6/B5Naho+pm+/DWw3BSerGezGtYZi67Z5U/2asUzfdk2Vlwyx10z05VDY8pm66J6vKht3UTfdkV9nwJnXTPdm33rCLIYbqwRBD/WCIoX4wxFA/GNY0vJ88jUb9ZTYL7SET0vC0+Sy9OESQMRLQMLssv9jH8CkSzrC4vHWM4FMkmKFp/e45jtMloQwzU5VxJKkLAhn2zHVSLAQEMpTWJmNpfSGQoVTpLpbXJ2EMf0qVEqyphjF8FWtFE/sgjKGc6nGKZnYmjGFfrLWNZnYmtuEqmtmZ2P+l8cOaMIZyqk40sQ/CGL5LlRIkqIQxFIK2TmcTTeyDQDGN1NXE70pDGQpBTYo8uFCjJ/MfMcUAMdgI2JSo8xLH6ZJghs/FGvM4SleEm6fZX+fMJUoxCjmbeJH52N9FsDERdkY47/99HQeTdFPC4Wf1991eUAMXrFtgqB8MMdQPhhjGa+huV22JtQGGq9f14vyji/Wk7G65MIbTLDeRXc2Wmkvl2Zcwb7cpDjTX0/SGI6HO1RBYevTwXGAmzPeMX1MbShNRV0NE16M3UoHf5C0wnNm3nQ2Ghh9ulOG9swV+fY5aQ59ddV4ryloN/ba3+igqNdx6NuKhsYberXDPb6k0FL+nRd6aaVhmA7YzCUmlYSlc8XjzDV37kZtv2HFMNrfAcNl6Q0f2QxsM7ZFNGwzta+e6DZeH7al3s8rX9mKNNfxa2jYYtkeneg2vUlGPlqLWLB21hoVvgCEx4MygiYZPxYdaxsQNNDTmv8kjDtsZHUoNjalF8rDY1tXoNBQCsYFU3pbIotNQGBG9SOVtg0SVhlKQMpMq2IJvlYbinL1UwdDz6jYUOw6pN7VtVFFpKObZSud22WJvlYbiYX7SFJUtqFFpKK65SJ1p4wzFR+etN7zDEEMMMcQQQwwxxBBDDDHEEEMMMcQQQwwxxBBDDDHEEEMMMcQQQwwxxBDD/89QzInSkzE07xsZXR33MBKKiY9+EGrEzy/VBIYY6gdDDPWDIYb6wRBD/WAok+SKsQrcVjb0OKJJBe5T0STETYLKEDeeOrFugleEfKuPk0Q3NpaluqDr5BslGK8p9MW2z18Npns2vGnCm1jmYDQDaa7kKIPv6YQi2r8Yw7qCSe5vKkG31kv4j4Hi7ka8Oawky1TXqzg4+h8v6WQwmW5vVbF6n9sPIQYAAAAAAAAAAAAAANDGL7YZd1brXhwbAAAAAElFTkSuQmCC" alt="">
+                </div>
+
+<div id="write">
+                <p>Download</p>
+            </div>
+            <div id="button">
+                <div id="btn1"></div>
+                <div id="btn2"></div>
+            </div>
+            <div id="write2">
+                <p>Copyright ©2022 Buffer|Privacy|Terms|Security</p>
+            </div>
+        </div>
+        <div id="box2">
+            <div id="h">
+                <h1>Tools</h1>
+                <p>Publishing</p>
+                <p>Analytics</p>
+                <p>Engagement</p>
+                <p>Start page</p>
+                <p>Extras</p>
+            </div>
+        </div>
+        <div id="box3">
+            <div id="h">
+                <h1>Resources</h1>
+                <p>Blog</p>
+                <p>Content Library</p>
+                <p>Browser Extension</p>
+                <p>Free Image Editor</p>
+            </div>
+        </div>
+
+<div id="box4">
+            <div id="h">
+                <h1>Support</h1>
+                <p>Help Center</p>
+                <p>Status</p>
+                <p>Changelog</p>
+                <p>Product Roadmap</p>
+            </div>
+        </div>
+        <div id="box5">
+            <div id="h">
+                <h1>Company</h1>
+                <p>About</p>
+                <p>Transparency</p>
+                <p>Careers</p>
+                <p>Accessibility</p>
+                <p>Press</p>
+                <p>Sitemap</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="bottom">
+      <h1>Buffer</h1>
+      <img src=""alt=""/>
+       <p>Download</p>
+       <button>App Store</button>
+       <button>Google Play</button>
+    </div> -->
+</body>
+</html>
