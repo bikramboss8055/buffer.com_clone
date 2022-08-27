@@ -10,7 +10,7 @@ function Navbar(){
         <li><a href="">Trends</a></li>
         <li><a href="">News</a></li>
         <li><a href="">Work Culture</a></li>
-        <li><a href="">All categories <span><i class="fa-solid fa-angle-down"></i></span></a>
+        <li><button id='show_category' onmouseout='hide_category()' onmouseover='show_category()'>All categories <span><i id='arrow' class="fa-solid fa-angle-down"></i></span></button>
         </li>
     </ul>
     <div id="dropdown"></div>
