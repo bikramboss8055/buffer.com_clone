@@ -6,10 +6,10 @@ function Navbar(){
 </div>
 <div class="logo">
     <ul id="ul">
-        <li><a href="">Guides</a></li>
-        <li><a href="">Trends</a></li>
-        <li><a href="">News</a></li>
-        <li><a href="">Work Culture</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="work.html">Work Culture</a></li>
         <li><button id='show_category' onmouseout='hide_category()' onmouseover='show_category()'>All categories <span><i id='arrow' class="fa-solid fa-angle-down"></i></span></button>
         </li>
     </ul>
