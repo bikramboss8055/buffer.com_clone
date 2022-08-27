@@ -17,7 +17,7 @@ a{
 }
 body{
     border: 2px solid orange;
-    height: 5655px;
+    height: 7655px;
 }
 .header{
 /* border: 1px solid red; */
@@ -158,27 +158,101 @@ margin-bottom: 30px;
 #manag img{
     width: 10%;
     height: 100%;
-    border-radius: 50%;
+    border-radius:  100%;
     border: #2C4BFF solid;
 }
-
-#posts{
-    width:80%;
-    margin:auto;
+#ma{
     display:grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:40px;
-    margin-top: 40px;
+    grid-template-columns: repeat(2,1fr);
 }
-.s{
+#main{
+   width: 70%;
+   height:1855px;
+   margin:auto;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap:30px;
+   margin-top: 50px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   padding-top: 30px;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-bottom: 30px;
+
+}
+#main :hover{
+    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+   #main>div{
+    width:100%;
+    
+}
+#main img{
+    width:100%;
+}
+#p{
     width:100%;
     display: flex;
-    gap:20px;
+    font-size: 11px;
+    gap:10px;
 }
-.s img{
-    width:100%;
+#but{
+    width:30px;
+    margin: auto;
 }
-    </style>
+#but{
+    width:200px;
+    height: 50px;
+    margin-top: 40px;
+    font-size: larger;
+    color: #1e37c5;
+    border: #1e37c5 1px solid;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#but:hover{
+    background: rgb(120, 199, 2);
+    box-shadow:#0d2299;
+}
+#end1{
+    width:70%;
+    margin: auto;
+    display: flex;
+    gap:30px;
+
+}
+#end{
+    margin-top: 50px;
+    text-align: center;
+    background: azure;
+    padding: 20px 20px 20px;
+    
+}
+#end>h6{
+    margin-bottom: 50px;
+}
+#end1 :hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: #c5ed11;
+}
+
+#end3 :hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: #e45406;
+}
+#end4 :hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: #0fcd1e;
+}
+#end2 :hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: #849d20;
+}
+</style>
 </head>
 <body>
     <head>
@@ -196,8 +270,8 @@ margin-bottom: 30px;
             </div>
             <div class="logo">
                 <ul id="ul">
-                    <li><a href="">Guides</a></li>
-                    <li><a href="">Trends</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="trends.html">Trends</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="work.html">Work Culture</a></li>
                     <li><a href="">All categories <span><i class="fa-solid fa-angle-down"></i></span></a>
@@ -340,30 +414,142 @@ margin-bottom: 30px;
             </div>
         </div>
     </div>  
-   <!-- <div id="posts">
-           <div class="s">
-            <div><a href=""><img src="https://buffer.com/resources/content/images/size/w600/2022/05/spacex.jpeg" alt=""></a></div>
-            <div>
-                <div><a href="">What We’ve Learned Launching a New Product as an 11-Year-Old Company</a></div>
-                <div>
-                    <p>Jul 21, 2022</p>
-                    <p>6 min read<ul>
-                    <li>open</li>
-                </div>
-            </div>
-           </div>
-           <div class="s">
-            <div><a href=""><img src="https://buffer.com/resources/content/images/size/w600/2022/05/spacex.jpeg" alt=""></a></div>
-            <div>
-                <div><a href="">What We’ve Learned Launching a New Product as an 11-Year-Old Company</a></div>
-                <div>
-                    <p>Jul 21, 2022</p>
-                    <p>6 min read<ul>
-                    <li>open</li>
-                </div>
-            </div>
-           </div>
-   </div> -->
+<!--     -->
+
+
+<div id="main">
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2022/05/spacex.jpeg" alt="">
+    </div>
+    <div>
+        <h4><a href="">What to Post on Each Social Media Platform: The Complete Guide to Optimizing Your Social Content</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2022/05/matt-palmer-s1NwZl1hxWE-unsplash.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">A Day in the Life of a Social Media Manager: How to Spend Time on Social Media in 2017</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2022/05/louis-hansel-SCc9AndIwJ4-unsplash.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">The Complete Guide to Facebook Groups: How to Create a Group, Build a Community and Increase Your Organic Reach</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2017/08/what-to-post-on-each-social-media-platform.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">What to Post on Each Social Media Platform: The Complete Guide to Optimizing Your Social Content</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2017/08/what-to-post-on-each-social-media-platform.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">What to Post on Each Social Media Platform: The Complete Guide to Optimizing Your Social Content</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2017/07/A-Day-in-the-Life-of-a-Social-Media-Manager.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">A Day in the Life of a Social Media Manager: How to Spend Time on Social Media in 2017</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/resources/wp-content/uploads/2017/07/facebook-group-feature.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">The Complete Guide to Facebook Groups: How to Create a Group, Build a Community and Increase Your Organic Reach</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2021/03/Frame-37-1.png" alt="">
+    </div>
+    <div>
+        <h4><a href="">What to Post on Each Social Media Platform: The Complete Guide to Optimizing Your Social Content</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2021/04/kelli-tungay-Sj0nhVIb4eY-unsplash.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">What to Post on Each Social Media Platform: The Complete Guide to Optimizing Your Social Content</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2021/06/tim-mossholder-epBIrtdg2Hk-unsplash.jpeg" alt="">
+    </div>
+    <div>
+        <h4><a href="">A Day in the Life of a Social Media Manager: How to Spend Time on Social Media in 2017</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2022/03/Buffer_SD_Team_--42-of-67-.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">The Complete Guide to Facebook Groups: How to Create a Group, Build a Community and Increase Your Organic Reach</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2022/03/bannon-morrissy-RmMZUh0Q4MA-unsplash.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">What to Post on Each Social Media Platform: The Complete Guide to Optimizing Your Social Content</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2021/07/Frame-50.png" alt="">
+    </div>
+    <div>
+        <h4><a href="">What to Post on Each Social Media Platform: The Complete Guide to Optimizing Your Social Content</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2021/07/Frame-50.png" alt="">
+    </div>
+    <div>
+        <h4><a href="">A Day in the Life of a Social Media Manager: How to Spend Time on Social Media in 2017</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2022/02/michael-browning-akz0w36DpM4-unsplash.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">The Complete Guide to Facebook Groups: How to Create a Group, Build a Community and Increase Your Organic Reach</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+    <div>
+        <img src="https://buffer.com/resources/content/images/size/w600/2022/01/simon-berger-twukN12EN7c-unsplash.jpg" alt="">
+    </div>
+    <div>
+        <h4><a href="">What to Post on Each Social Media Platform: The Complete Guide to Optimizing Your Social Content</a></h4>
+        <div id="p"><p>Sep 7, 2017</p><p>11 min read</p><p>Guides & Courses</p></div>
+    </div>
+</div>
+<div ><button id="but">Show More Posts</button></div>
+
+<div id="end">
+    <h6>OTHER CONTENT YOU MAY LIKE</h6>
+    <div id="end1">
+        <div id="end2">
+            <img src="https://buffer.com/resources/assets/img/flow.svg?v=df1fb5932b" alt="">
+            <p>Real-life marketing stories, trends, and strategies from social media’s most engaging brands.</p>
+        </div>
+        <div id="end3">
+            <img src="https://buffer.com/resources/assets/img/breakingbrand.svg?v=df1fb5932b" alt="">
+            <p>Breaking Brand is a Buffer podcast series that takes you behind-the-scenes with the Pattern Brands founding team .</p>
+        </div>
+        <div id="end4">
+            <img src="https://buffer.com/resources/assets/img/social.svg?v=df1fb5932b" alt="">
+            <p>The Science of Social Media (Buffer Podcast) is a weekly audio experience exploring best-practices and insights.</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
-<script src="work.js"></script>
+<script src="../shivaScripts/work.js"></script>
