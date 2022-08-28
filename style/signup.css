@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+#container{
+    width: 100%;
+    height:100vh;
+    display: flex;
+}
+.child1{
+    width: 68%;
+    
+}
+
+.inner_child1{
+    margin: 16px 0;
+    padding: 0 56px;  
+    
+}
+.inner_child1 img{
+width: 112px;
+margin: 24px ;
+}
+.inner2_child1{
+    width: 480px;
+    margin:auto;
+    margin-top: 50px;
+    font-weight: 500;
+}
+.inner2_child1 a{
+    text-decoration: none;
+    color: blue;
+}
+.input_field{
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    margin: 8px 0 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #b8b8b8;
+}
+
+.signupbtn{
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    margin: 20px 0 ;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #b8b8b8;   
+}
+input[type='checkbox']{
+    position:absolute;
+    top: 400px;
+    left: 290px;
+    height:40px;
+    width: 30px;
+}
+
+
+/* ---------------------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.child2{
+    width: 32%;
+    height: 130vh;
+    position: relative;
+    background: url(https://static.buffer.com/login/public/img/signup-bkg-publish.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner_child2{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    
+    width: 320px;
+    text-align: center;
+    font-style: normal;
+    
+    color: #FFFFFF;
+}
+#para{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    letter-spacing: -0.75px;
+    font-weight: bold;
+}
+
+.author_image{
+    width: 80px;
+    height: 80px;
+    margin: 8px 0;
+}
