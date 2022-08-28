@@ -13,6 +13,7 @@
     }else{
       if(data.email == email && data.password == password){
         alert("Login Successful");
+        window.location.href='../code/blog_homepage.html';
       } else {
         alert("Wrong Credentials");
       }

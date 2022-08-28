@@ -1,0 +1,125 @@
+#header {
+    display: flex;
+    height: 115px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    ;
+}
+#header h1{
+    font-weight:lighter;
+    font-size:20px;
+    margin-top:15px;
+}
+
+
+#img-1 {
+    height: 50%;
+    width: 107px;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+#img-1>img {
+    height: 100%;
+    width: 100%;
+}
+
+#img-2 {
+    height: 12%;
+    width: 30px;
+    margin-top: 50px;
+}
+
+#img-2>img {
+    height: 100%;
+    width: 100%;
+}
+
+#keys-1 {
+    height: 70%;
+    width: 520px;
+    display: flex;
+    gap: 53px;
+    margin-left: 15%;
+    margin-top: 28px;
+}
+
+#keys-1>a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+
+
+#login {
+    margin-left: 130px;
+    margin-top: 28px;
+    color: rgb(33, 70, 192);
+    font-weight: bolder;
+}
+#login>a{
+    text-decoration: none;
+    color: black;
+}
+
+#start-1 {
+    height: 50px;
+    width: 190px;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: rgb(33, 70, 192);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+#start-1>a{
+    text-decoration: none;
+    color: white;
+
+}
+.get_start>a{
+    text-decoration: none;
+    color: white;
+}
+/* ----- */
+#keys-1 {
+    position: relative;
+}
+.dropbtn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown .dropdown_content {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: -20px;
+    line-height: 20px;
+    padding: 5px 15px;
+    z-index: 1;
+   border-radius:15px;
+    width: 300px;
+    background-color: aliceblue;
+}
+
+.dropdown_content a {
+    display: block;
+    padding: 30px 30px 0px;
+    text-decoration: none;
+    color:inherit;
+
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

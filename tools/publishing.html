@@ -1,515 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../components/main_navbar.css">
+    <link rel="stylesheet" href="../components/blog_footer.css">
+
     <style>
-             *{
-                margin: 0;
-                padding:0;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-             }
-             h1{
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h1 {
             font-family: Poppins, sans-serif;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-weight: bold;
-}
-       #btn{
-        display: flex;
-    text-align: center;
-    -webkit-box-align: center;
-    align-items: center;
-    font-size: 18px;
-    line-height: 2.6;
-    font-weight: 400;
-    border-radius: 5px;
-    border: 0px;
-    letter-spacing: 0.3px;
-    cursor: pointer;
-    user-select: none;
-    appearance: none;
-    position: relative;
-    transition-property: background-color, border-color, color, box-shadow;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    min-width: 0px;
-    flex: 0 0 auto;
-    height: 48px;
-    font-family: Roboto, sans-serif;
-    background-color: rgb(44, 75, 255);
-    color: rgb(255, 255, 255);
-    padding: 0px 24px;
-    box-shadow: none;
-    -webkit-box-pack: center;
-    justify-content: center;
-    box-sizing: border-box;
-    width: min-content;
-    margin: 40px auto;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-weight: bold;
         }
-                #con1{
-display: flex;
-margin-top: 40px;
-gap: 100px;
-justify-content: center;
-width: 90%;
-margin: 40px auto;
-        }
-        video{
-margin-top: -25px;
-        }
-        #text2{
-text-align: center;
-margin-top: 40px;
-        }
-        img{
-width: 100%;
-        }
-        #con2{
-display: flex;
-gap: 10%;
-        }
-        #con3{
-display: grid;
-grid-template-columns: repeat(4,1fr);
-gap: 10px;
-height: 200px;
-margin-top: 40px;
-width: 100%;
-justify-content: center;
-        }
-        #con3>div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        }
-        #con4{
-display: flex;
-gap: 20px;
-        }
-        #con4>div{
-width: 45%;
-        }
-        .btn3{
-    width:60px;
-    height:27px;
-    color:white;
-        }
-        #con5{
-text-align: center;
-background-color: rgb(60, 60, 226);
-color: white;
-height: 300px;
-padding: 6%;
-        }
-        #con5>h1{
 
-width: 60%;
-margin: auto;
+        #btn {
+            display: flex;
+            text-align: center;
+            -webkit-box-align: center;
+            align-items: center;
+            font-size: 18px;
+            line-height: 2.6;
+            font-weight: 400;
+            border-radius: 5px;
+            border: 0px;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            user-select: none;
+            appearance: none;
+            position: relative;
+            transition-property: background-color, border-color, color, box-shadow;
+            transition-duration: 0.1s;
+            transition-timing-function: ease-out;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            min-width: 0px;
+            flex: 0 0 auto;
+            height: 48px;
+            font-family: Roboto, sans-serif;
+            background-color: rgb(44, 75, 255);
+            color: rgb(255, 255, 255);
+            padding: 0px 24px;
+            box-shadow: none;
+            -webkit-box-pack: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: min-content;
+            margin: 40px auto;
         }
-        .btn3{
+
+        #con1 {
+            display: flex;
+            margin-top: 40px;
+            gap: 100px;
+            justify-content: center;
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        video {
+            margin-top: -25px;
+        }
+
+        #text2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        #con2 {
+            display: flex;
+            gap: 10%;
+        }
+
+        #con3 {
             display: grid;
-background-color: rgb(226, 61, 61);
-color: white;
-width: 150px;
-height: 48px;
-margin: 30px auto;
-border-radius: 10px;
-justify-content: center;
-align-items: center;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            height: 200px;
+            margin-top: 40px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        #con3>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #con4 {
+            display: flex;
+            gap: 20px;
+        }
+
+        #con4>div {
+            width: 45%;
+        }
+
+        .btn3 {
+            width: 60px;
+            height: 27px;
+            color: white;
+        }
+
+        #con5 {
+            text-align: center;
+            background-color: rgb(60, 60, 226);
+            color: white;
+            height: 300px;
+            padding: 6%;
+        }
+
+        #con5>h1 {
+
+            width: 60%;
+            margin: auto;
+        }
+
+        .btn3 {
+            display: grid;
+            background-color: rgb(226, 61, 61);
+            color: white;
+            width: 150px;
+            height: 48px;
+            margin: 30px auto;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
 
         }
-.sym{
-width: 50%;
-}
-#con6{
-display: flex;
-margin-top:70px;
-}
-#con6>div:nth-child(2){
-height: 60%;
-margin-top: 4%;
-}
-#con6>img{
-width: 50%;
-margin-top: 100px;
-}
-#con6>div{
-width: 100%;
-}
-#tsm{
-display: grid;
-grid-template-columns: repeat(2,1fr);
 
-}
-#immy{
-width:80%;
-}
-#tsm>div>img{
-    width: 30%;
-    text-align: center;
-}
-#tsm>div>p{
-margin-left: 10px;
-margin-top: 3px;
-}
-#tsm{
-width: 30%;
-}
+        .sym {
+            width: 50%;
+        }
 
-    #ps{
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0px 0px 1rem;
-    color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
-    text-align: center;
-}
-#head{
-        display: flex;
-        height: 115px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
-    }
-    #img{
-        height: 50%;
-        width: 107px;
-        margin-left: 30px;
-        margin-top: 25px;
-    }
-    #img>img{
-        height: 100%;
-        width: 100%;
-    }
-    #img1{
-        height: 12%;
-        width: 30px;
-        margin-top: 50px;
-    }
-    #img1>img{
-        height: 100%;
-        width: 100%;
-    }
-    #keys{
-        height: 70%;
-        width: 520px;
-        display: flex;
-        gap: 53px;
-        margin-left: 15%;
-        margin-top: 28px;
-    }
-    h1{
-        font-weight: lighter;
-        font-size: 21px;
-    }
-    #login{
-        margin-left: 130px;
-        margin-top: 28px;
-        color: rgb(33, 70, 192);
-    }
-    #start{
-        height: 50px;
-        width: 190px;
-        margin-left: 20px;
-        margin-top: 30px;
-        background-color: rgb(33, 70, 192);
-        color: white;
-        text-align: center;
-        border-radius: 5px;
-    }
+        #con6 {
+            display: flex;
+            margin-top: 70px;
+        }
+
+        #con6>div:nth-child(2) {
+            height: 60%;
+            margin-top: 4%;
+        }
+
+        #con6>img {
+            width: 50%;
+            margin-top: 100px;
+        }
+
+        #con6>div {
+            width: 100%;
+        }
+
+        #tsm {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        #immy {
+            width: 80%;
+        }
+
+        #tsm>div>img {
+            width: 30%;
+            text-align: center;
+        }
+
+        #tsm>div>p {
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+
+        #tsm {
+            width: 30%;
+        }
+
+        #ps {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0px 0px 1rem;
+            color: rgb(0, 0, 0);
+            letter-spacing: 0.1px;
+            text-align: center;
+        }
+
+        #head {
+            display: flex;
+            height: 115px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            ;
+        }
+
+        #img {
+            height: 50%;
+            width: 107px;
+            margin-left: 30px;
+            margin-top: 25px;
+        }
+
+        #img>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #img1 {
+            height: 12%;
+            width: 30px;
+            margin-top: 50px;
+        }
+
+        #img1>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #keys {
+            height: 70%;
+            width: 520px;
+            display: flex;
+            gap: 53px;
+            margin-left: 15%;
+            margin-top: 28px;
+        }
+
+        h1 {
+            font-weight: lighter;
+            font-size: 21px;
+        }
+
+        #login {
+            margin-left: 130px;
+            margin-top: 28px;
+            color: rgb(33, 70, 192);
+        }
+
+        #start {
+            height: 50px;
+            width: 190px;
+            margin-left: 20px;
+            margin-top: 30px;
+            background-color: rgb(33, 70, 192);
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
 
 
-#navbar11{
-    height: 450px;
-    width: 100%;
-    display: flex;
-   }
-   #navbar11>#box1{
-    height: 100%;
-    width: 500px;
-   }
-   #navbar11>#box2{
-    height: 100%;
-    width: 210px;
-   }
-   #navbar11>#box3{
-    height: 100%;
-    width: 210px;
-   }
-   #navbar11>#box4{
-    height: 100%;
-    width: 210px;
-   }
-   #navbar11>#box5{
-    height: 100%;
-    width: 210px;
-   }
-   #navbar11>#box1>#buffer{
-    height: 20%;
-    width: 100%;
-    margin-top: 80px;
-   }
-   #navbar11>#box1>#image{
-    height: 8%;
-    width: 100%;
-    display: flex;
-    margin-top: 80px;
-   }
-   #navbar11>#box1>#write{
-    height: 5%;
-    width: 100%;
-    margin-top: 10px;
-    margin-left: 0px;
-   }
-   #navbar11>#box1>#button{
-    height: 7%;
-    width: 100%;
-    margin-top: 10px;
-    margin-left: 0px;
-   }
-   #navbar11>#box1>#write2{
-    height: 5%;
-    width: 100%;
-    margin-top: 10px;
-    margin-left: 0px;
-   }
-   #navbar11>#box1>#buffer>h1{
-    font-size: 45px;
-    font-weight: bolder;
-    margin-left: 70px;
-   }
-   #navbar11>#box1>#image>#img1{
-    height: 65%;
-    margin-top: 5px;
-    margin-left: 70px;
-    width: 22px;
-   }
-   #navbar11>#box1>#image>#img1>img{
-    height: 100%;
-    width: 100%;
-   }
-   #navbar11>#box1>#image>#img2{
-    height: 60%;
-    margin-top: 5px;
-    margin-left: 20px;
-    width: 10px;
-   }
-   #navbar11>#box1>#image>#img2>img{
-    height: 100%;
-    width: 100%;
-   }
-   #navbar11>#box1>#image>#img3{
-    height: 65%;
-    margin-top: 5px;
-    margin-left: 20px;
-    width: 20px;
-   }
-   #navbar11>#box1>#image>#img3>img{
-    height: 100%;
-    width: 100%;
-   }
-   #navbar11>#box1>#image>#img4{
-    height: 60%;
-    margin-top: 5px;
-    margin-left: 20px;
-    width: 20px;
-   }
-   #navbar11>#box1>#image>#img4>img{
-    height: 100%;
-    width: 100%;
-   }
-   #navbar11>#box1>#image>#img5{
-    height: 65%;
-    margin-top: 5px;
-    margin-left: 20px;
-    width: 20px;
-   }
-   #navbar11>#box1>#image>#img5>img{
-    height: 100%;
-    width: 100%;
-   }
-   #navbar11>#box1>#image>#img6{
-    height: 65%;
-    margin-top: 5px;
-    margin-left: 20px;
-    width: 20px;
-   }
-   #navbar11>#box1>#image>#img6>img{
-    height: 100%;
-    width: 100%;
-   }
-   #navbar11>#box1>#write>p{
-    margin-top: 0px;
-    font-size: 20px;
-    margin-left: 70px;
-    font-weight: bolder;
-   }
-   #navbar11>#box1>#write2>p{
-    margin-top: 0px;
-    font-size: 13px;
-    margin-left: 70px;
-   }
-   #navbar11>#box2>#h{
-    height: 300px;
-    width: 150px;
-    margin-top: 100px;
-    margin-left: 30px;
-   }
-   #navbar11>#box2>#h>h1{
-   font-size: 22px;
-   font-weight: bolder;
-   }
-   #navbar11>#box2>#h>p{
-   font-size: 20px;
-   }
-   #navbar11>#box3>#h{
-    height: 300px;
-    width: 120px;
-    margin-top: 100px;
-    margin-left: 30px;
-   }
-   #navbar11>#box3>#h>h1{
-   font-size: 22px;
-   font-weight: bolder;
-   }
-   #navbar11>#box3>#h>p{
-   font-size: 20px;
-   }
-   #navbar11>#box4>#h{
-    height: 300px;
-    width: 150px;
-    margin-top: 100px;
-    margin-left: 30px;
-   }
-   #navbar11>#box4>#h>h1{
-   font-size: 22px;
-   font-weight: bolder;
-   }
-   #navbar11>#box4>#h>p{
-   font-size: 20px;
-   }
-   #navbar11>#box5>#h{
-    height: 300px;
-    width: 150px;
-    margin-top: 100px;
-    margin-left: 30px;
-   }
-   #navbar11>#box5>#h>h1{
-   font-size: 22px;
-   font-weight: bolder;
-   }
-   #navbar11>#box5>#h>p{
-   font-size: 20px;
-   }
+        #navbar11 {
+            height: 450px;
+            width: 100%;
+            display: flex;
+        }
 
+        #navbar11>#box1 {
+            height: 100%;
+            width: 500px;
+        }
+
+        #navbar11>#box2 {
+            height: 100%;
+            width: 210px;
+        }
+
+        #navbar11>#box3 {
+            height: 100%;
+            width: 210px;
+        }
+
+        #navbar11>#box4 {
+            height: 100%;
+            width: 210px;
+        }
+
+        #navbar11>#box5 {
+            height: 100%;
+            width: 210px;
+        }
+
+        #navbar11>#box1>#buffer {
+            height: 20%;
+            width: 100%;
+            margin-top: 80px;
+        }
+
+        #navbar11>#box1>#image {
+            height: 8%;
+            width: 100%;
+            display: flex;
+            margin-top: 80px;
+        }
+
+        #navbar11>#box1>#write {
+            height: 5%;
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+
+        #navbar11>#box1>#button {
+            height: 7%;
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+
+        #navbar11>#box1>#write2 {
+            height: 5%;
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+
+        #navbar11>#box1>#buffer>h1 {
+            font-size: 45px;
+            font-weight: bolder;
+            margin-left: 70px;
+        }
+
+        #navbar11>#box1>#image>#img1 {
+            height: 65%;
+            margin-top: 5px;
+            margin-left: 70px;
+            width: 22px;
+        }
+
+        #navbar11>#box1>#image>#img1>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #navbar11>#box1>#image>#img2 {
+            height: 60%;
+            margin-top: 5px;
+            margin-left: 20px;
+            width: 10px;
+        }
+
+        #navbar11>#box1>#image>#img2>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #navbar11>#box1>#image>#img3 {
+            height: 65%;
+            margin-top: 5px;
+            margin-left: 20px;
+            width: 20px;
+        }
+
+        #navbar11>#box1>#image>#img3>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #navbar11>#box1>#image>#img4 {
+            height: 60%;
+            margin-top: 5px;
+            margin-left: 20px;
+            width: 20px;
+        }
+
+        #navbar11>#box1>#image>#img4>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #navbar11>#box1>#image>#img5 {
+            height: 65%;
+            margin-top: 5px;
+            margin-left: 20px;
+            width: 20px;
+        }
+
+        #navbar11>#box1>#image>#img5>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #navbar11>#box1>#image>#img6 {
+            height: 65%;
+            margin-top: 5px;
+            margin-left: 20px;
+            width: 20px;
+        }
+
+        #navbar11>#box1>#image>#img6>img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #navbar11>#box1>#write>p {
+            margin-top: 0px;
+            font-size: 20px;
+            margin-left: 70px;
+            font-weight: bolder;
+        }
+
+        #navbar11>#box1>#write2>p {
+            margin-top: 0px;
+            font-size: 13px;
+            margin-left: 70px;
+        }
+
+        #navbar11>#box2>#h {
+            height: 300px;
+            width: 150px;
+            margin-top: 100px;
+            margin-left: 30px;
+        }
+
+        #navbar11>#box2>#h>h1 {
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        #navbar11>#box2>#h>p {
+            font-size: 20px;
+        }
+
+        #navbar11>#box3>#h {
+            height: 300px;
+            width: 120px;
+            margin-top: 100px;
+            margin-left: 30px;
+        }
+
+        #navbar11>#box3>#h>h1 {
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        #navbar11>#box3>#h>p {
+            font-size: 20px;
+        }
+
+        #navbar11>#box4>#h {
+            height: 300px;
+            width: 150px;
+            margin-top: 100px;
+            margin-left: 30px;
+        }
+
+        #navbar11>#box4>#h>h1 {
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        #navbar11>#box4>#h>p {
+            font-size: 20px;
+        }
+
+        #navbar11>#box5>#h {
+            height: 300px;
+            width: 150px;
+            margin-top: 100px;
+            margin-left: 30px;
+        }
+
+        #navbar11>#box5>#h>h1 {
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        #navbar11>#box5>#h>p {
+            font-size: 20px;
+        }
     </style>
 </head>
-<body>
-    <body>    
-    <div id="nav"></div>
-    <div id="con1">
-     <div id="text1">
-        <h1 style="margin-top:70px;">Build your audience and grow your brand on social media</h1>
-        <p id = "ps">Plan and publish your content for Instagram, TikTok, Facebook, Twitter, Pinterest, and LinkedIn, all from one simple dashboard.</p>
-        <div id="btn">Get Started now</div>
-     </div>
-     <div>
-        <video style="margin-top:  -30px;" controls autoplay   width="400" height="500" >
-            <source src="https://buffer.com/static/animation/hero-buffer-publish-animation-v2.mp4" type="video/mp4">
-            <source src="https://buffer.com/static/animation/hero-buffer-publish-animation-v2.webm" type="video/ogg">
-            Your browser does not support the video tag.
-          </video>
-     </div>
-    </div>
-    <div id="text2">
-    <h1>Craft the perfect post for each social network, all in one place
-    </h1>
-    <p id="ps">Publishing content on all of your channels shouldn’t be a time-drain. Plan and publish on every channel in one simple-to-use dashboard.
-    </p>
-    </div>
-    <div id="img">
-<img src="https://buffer.com/static/google-business-profile/webp/screenshot-all-channels.webp">
-    </div>
-    <div id="con2">
-<div>
-    <h4 style="color:blue ;" >_____INSTAGRAM</h4>
-    <h1>Take your Instagram marketing to the next level</h1>
-    <p>Build your brand on Instagram. Work together with your team to plan, preview, and schedule your upcoming Instagram posts, carousels, and campaigns.</p>
-    <p style="color:blue ;">Learn more</p>
-</div>
-<div>
-    <img style="width:100%;" src="https://static.buffer.com/cdn-cgi/image/w=640,quality=90,format=auto/marketing/static/illustrations/buffer-publish-instagram@2x-2.png">
-</div>
-    </div>
-    <div id="con3">
-        <div>
-<img class="sym" src="https://t4.ftcdn.net/jpg/02/11/56/79/240_F_211567940_Q5utDvWtnBfzDLTWsc2xyU3uz1uVX56o.jpg">
-<h4>Direct Scheduling</h4>
-        </div>
-        <div>
-            <img class="sym" src="https://www.districtm.net/wp-content/uploads/2020/07/message-24.png">
-            <h4>First comment</h4>
-        </div>
-        <div>
-            <img class="sym" src="https://thumbs.dreamstime.com/b/fast-delivery-shopping-cart-sign-simple-icon-isolated-white-background-store-trolley-wheels-fast-fast-delivery-shopping-109728271.jpg">
-            <h4>Shop grid</h4>
-        </div>
-        <div>
-            <img class="sym" src="https://as1.ftcdn.net/v2/jpg/02/11/56/80/1000_F_211568038_3030MOR2zvNR9nTyWtb7fvHuxYcWaa3T.jpg">
-            <h4>Remainder</h4>
-        </div>
-    </div>
-    <div style="margin-top: 50px;" id="con4">
-        <div id="ts1">
-            <h1 style="margin-top: 60px;">Plan and prepare your TikToks and Stories
-            </h1>
-            <p id="ps">Plan and set reminders for your Stories and TikTok videos. You will receive a mobile notification when it’s time to share.
 
+<body>
+
+    <body>
+        <div id="nav"></div>
+        <div id="con1">
+            <div id="text1">
+                <h1 style="margin-top:70px;">Build your audience and grow your brand on social media</h1>
+                <p id="ps">Plan and publish your content for Instagram, TikTok, Facebook, Twitter, Pinterest, and
+                    LinkedIn, all from one simple dashboard.</p>
+                <div id="btn">Get Started now</div>
+            </div>
+            <div>
+                <video style="margin-top:  -30px;" controls autoplay width="400" height="500">
+                    <source src="https://buffer.com/static/animation/hero-buffer-publish-animation-v2.mp4"
+                        type="video/mp4">
+                    <source src="https://buffer.com/static/animation/hero-buffer-publish-animation-v2.webm"
+                        type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div id="text2">
+            <h1>Craft the perfect post for each social network, all in one place
+            </h1>
+            <p id="ps">Publishing content on all of your channels shouldn’t be a time-drain. Plan and publish on every
+                channel in one simple-to-use dashboard.
             </p>
         </div>
+        <div id="img">
+            <img src="https://buffer.com/static/google-business-profile/webp/screenshot-all-channels.webp">
+        </div>
+        <div id="con2">
+            <div>
+                <h4 style="color:blue ;">_____INSTAGRAM</h4>
+                <h1>Take your Instagram marketing to the next level</h1>
+                <p>Build your brand on Instagram. Work together with your team to plan, preview, and schedule your
+                    upcoming Instagram posts, carousels, and campaigns.</p>
+                <p style="color:blue ;">Learn more</p>
+            </div>
+            <div>
+                <img style="width:100%;"
+                    src="https://static.buffer.com/cdn-cgi/image/w=640,quality=90,format=auto/marketing/static/illustrations/buffer-publish-instagram@2x-2.png">
+            </div>
+        </div>
+        <div id="con3">
+            <div>
+                <img class="sym"
+                    src="https://t4.ftcdn.net/jpg/02/11/56/79/240_F_211567940_Q5utDvWtnBfzDLTWsc2xyU3uz1uVX56o.jpg">
+                <h4>Direct Scheduling</h4>
+            </div>
+            <div>
+                <img class="sym" src="https://www.districtm.net/wp-content/uploads/2020/07/message-24.png">
+                <h4>First comment</h4>
+            </div>
+            <div>
+                <img class="sym"
+                    src="https://thumbs.dreamstime.com/b/fast-delivery-shopping-cart-sign-simple-icon-isolated-white-background-store-trolley-wheels-fast-fast-delivery-shopping-109728271.jpg">
+                <h4>Shop grid</h4>
+            </div>
+            <div>
+                <img class="sym"
+                    src="https://as1.ftcdn.net/v2/jpg/02/11/56/80/1000_F_211568038_3030MOR2zvNR9nTyWtb7fvHuxYcWaa3T.jpg">
+                <h4>Remainder</h4>
+            </div>
+        </div>
+        <div style="margin-top: 50px;" id="con4">
+            <div id="ts1">
+                <h1 style="margin-top: 60px;">Plan and prepare your TikToks and Stories
+                </h1>
+                <p id="ps">Plan and set reminders for your Stories and TikTok videos. You will receive a mobile
+                    notification when it’s time to share.
 
-        <div>
-            <img  src="https://static.buffer.com/cdn-cgi/image/w=640,quality=90,format=auto/marketing/static/screenshots/publish-instragram-stories.jpg">
+                </p>
+            </div>
+
+            <div>
+                <img
+                    src="https://static.buffer.com/cdn-cgi/image/w=640,quality=90,format=auto/marketing/static/screenshots/publish-instragram-stories.jpg">
+            </div>
         </div>
-    </div>
-    <div id="con5">
-<h1 style="color:white">140,000+ people like you use Buffer to build their brand on social media every month
-</h1>
-<div class="btn3">
-Get started now
-</div>
-    </div>
-    <div id="con6">
-        <div>
-            <img id="immy" src="https://static.buffer.com/cdn-cgi/image/w=640,quality=90,format=auto/marketing/static/ui/buffer-publish-collaboration@2x.jpeg">
-           
+        <div id="con5">
+            <h1 style="color:white">140,000+ people like you use Buffer to build their brand on social media every month
+            </h1>
+            <div class="btn3">
+                Get started now
+            </div>
         </div>
-        <div id="tsm">
+        <div id="con6">
             <div>
-                <img src="https://t3.ftcdn.net/jpg/02/15/07/66/240_F_215076612_njAttcE53U46lHtDmuIPsZUQcVFO6xuk.jpg">
-                <p>Draft Post</p>
-               
-            </div>
-            <div>
-                <img src="https://icon-library.com/images/approval-icon-png/approval-icon-png-23.jpg">
-                <p>Approvals</p>
-               
-            </div>
-            <div>
-                <img src="https://cdn.shopify.com/s/files/1/0427/9189/5202/products/Magic_Large_T_V_Mirror_Black_6_300x.png?v=1654737332">
-                <p>stay in sync</p>
-            </div>
-            <div>
-                <img src="https://icons.iconarchive.com/icons/iconsmind/outline/256/Key-icon.png">
-                <p style="margin-left:0px ;">Account management</p>
+                <img id="immy"
+                    src="https://static.buffer.com/cdn-cgi/image/w=640,quality=90,format=auto/marketing/static/ui/buffer-publish-collaboration@2x.jpeg">
 
             </div>
+            <div id="tsm">
+                <div>
+                    <img
+                        src="https://t3.ftcdn.net/jpg/02/15/07/66/240_F_215076612_njAttcE53U46lHtDmuIPsZUQcVFO6xuk.jpg">
+                    <p>Draft Post</p>
+
+                </div>
+                <div>
+                    <img src="https://icon-library.com/images/approval-icon-png/approval-icon-png-23.jpg">
+                    <p>Approvals</p>
+
+                </div>
+                <div>
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0427/9189/5202/products/Magic_Large_T_V_Mirror_Black_6_300x.png?v=1654737332">
+                    <p>stay in sync</p>
+                </div>
+                <div>
+                    <img src="https://icons.iconarchive.com/icons/iconsmind/outline/256/Key-icon.png">
+                    <p style="margin-left:0px ;">Account management</p>
+
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+        <div id="main_footer"></div>
+    </body>
+
 </html>
 <script src="publishing.js"></script>
+<script type="module">
+    import main_navbar from '../components/main_navbar.js'
+    document.getElementById('nav').innerHTML = (main_navbar())
+</script>
+<script type="module">
+    import footer from '../components/blog_footer.js'
+    document.getElementById('main_footer').innerHTML = (footer())
+
+</script>

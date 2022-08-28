@@ -55,3 +55,10 @@
 #show_category:hover #arrow{
 transform: rotate(180deg);
 }
+#shiva h1{
+   position: absolute;
+   top: 40px;
+   left: 90px;
+   font-size: 35px;
+   color:transparent
+}

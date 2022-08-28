@@ -1,151 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>  *{
-        margin: 0;
-        padding:0;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     }
-     h1{
-    font-family: Poppins, sans-serif;
-color: rgb(0, 0, 0);
-text-align: center;
-font-weight: bo;
-}
+    <link rel="stylesheet" href="../components/main_navbar.css">
+    <link rel="stylesheet" href="../components/blog_footer.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
 
-             #btn{
-                display: flex;
-    text-align: center;
-    -webkit-box-align: center;
-    align-items: center;
-    font-size: 18px;
-    line-height: 2.6;
-    font-weight: 400;
-    border-radius: 5px;
-    border: 0px;
-    letter-spacing: 0.3px;
-    cursor: pointer;
-    user-select: none;
-    appearance: none;
-    position: relative;
-    transition-property: background-color, border-color, color, box-shadow;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    min-width: 0px;
-    flex: 0 0 auto;
-    height: 48px;
-    font-family: Roboto, sans-serif;
-    background-color: rgb(44, 75, 255);
-    color: rgb(255, 255, 255);
-    padding: 0px 24px;
-    box-shadow: none;
-    -webkit-box-pack: center;
-    justify-content: center;
-    box-sizing: border-box;
-    width: min-content;
-    margin: 40px auto; 
+        h1 {
+            font-family: Poppins, sans-serif;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-weight: bo;
         }
-        #con1{
-display: flex;
-margin-top: 40px;
-gap: 100px;
-justify-content: center;
-width: 90%;
-margin: 40px auto;
-        }
-        video{
-margin-top: -25px;
-        } 
-        #con2{
-width: 100%;
-background-color: yellow;
-padding-top: 80px;
-        }
-        #text{
-   width: 60%;
-   font-size: 20px;
-   margin: auto;
-        }
-        #con3{
-       display: flex;
-       gap: 2%;
-        }
-      
-        .text1{
-margin-top: 100px;
-        }
-        #con5{
-text-align: center;
-background-color: rgb(60, 60, 226);
-color: white;
-height: 300px;
-padding: 6%;
-        }
-        #con5>h1{
 
-width: 60%;
-margin: auto;
+        #btn {
+            display: flex;
+            text-align: center;
+            -webkit-box-align: center;
+            align-items: center;
+            font-size: 18px;
+            line-height: 2.6;
+            font-weight: 400;
+            border-radius: 5px;
+            border: 0px;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            user-select: none;
+            appearance: none;
+            position: relative;
+            transition-property: background-color, border-color, color, box-shadow;
+            transition-duration: 0.1s;
+            transition-timing-function: ease-out;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            min-width: 0px;
+            flex: 0 0 auto;
+            height: 48px;
+            font-family: Roboto, sans-serif;
+            background-color: rgb(44, 75, 255);
+            color: rgb(255, 255, 255);
+            padding: 0px 24px;
+            box-shadow: none;
+            -webkit-box-pack: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: min-content;
+            margin: 40px auto;
         }
-        .btn3{
+
+        #con1 {
+            display: flex;
+            margin-top: 40px;
+            gap: 100px;
+            justify-content: center;
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        video {
+            margin-top: -25px;
+        }
+
+        #con2 {
+            width: 100%;
+            background-color: yellow;
+            padding-top: 80px;
+        }
+
+        #text {
+            width: 60%;
+            font-size: 20px;
+            margin: auto;
+        }
+
+        #con3 {
+            display: flex;
+            gap: 2%;
+        }
+
+        .text1 {
+            margin-top: 100px;
+        }
+
+        #con5 {
+            text-align: center;
+            background-color: rgb(60, 60, 226);
+            color: white;
+            height: 300px;
+            padding: 6%;
+        }
+
+        #con5>h1 {
+
+            width: 60%;
+            margin: auto;
+        }
+
+        .btn3 {
             display: grid;
-background-color: rgb(226, 61, 61);
-color: white;
-width: 150px;
-height: 48px;
-margin: 30px auto;
-border-radius: 10px;
-justify-content: center;
-align-items: center;
+            background-color: rgb(226, 61, 61);
+            color: white;
+            width: 150px;
+            height: 48px;
+            margin: 30px auto;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
 
         }
-        p{
-text-align: center;
+
+        p {
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
+    <div id="main_navbar"></div>
     <div id="con1">
         <div class="text1">
-           <h1 style="margin-top:70px;font-weight:2000px;">Build a loyal and engaged audience on social media</h1>
-           <p>See all of your comments, stay on top of important interactions, and turn followers into fans using Buffer.</p>
-           <div id="btn">Start a free 14 days trial</div>
+            <h1 style="margin-top:70px;font-weight:2000px;">Build a loyal and engaged audience on social media</h1>
+            <p>See all of your comments, stay on top of important interactions, and turn followers into fans using
+                Buffer.</p>
+            <div id="btn">Start a free 14 days trial</div>
         </div>
         <div>
-           <video style="margin-top:  -30px;" controls autoplay   width="400" height="500" >
-               <source src="https://buffer.com/static/animation/hero-buffer-engage-animation.mp4" type="video/mp4">
-               Your browser does not support the video tag.
-             </video>
+            <video style="margin-top:  -30px;" controls autoplay width="400" height="500">
+                <source src="https://buffer.com/static/animation/hero-buffer-engage-animation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-       </div>
-       <div id="con2">
-         <div id="text">
-        <h1>Reply to comments from your desktop</h1>
-        <p>View your unanswered comments in one simple dashboard. Buffer will highlight the most important ones for you.</p>
-         </div>
-        <img style="margin-top: 10px;" src="https://static.buffer.com/cdn-cgi/image/w=1200,quality=90,format=auto/marketing/static/screenshots/engagement-dashboard@2x.png">
-       </div>
-       <div id="con3">
+    </div>
+    <div id="con2">
+        <div id="text">
+            <h1>Reply to comments from your desktop</h1>
+            <p>View your unanswered comments in one simple dashboard. Buffer will highlight the most important ones for
+                you.</p>
+        </div>
+        <img style="margin-top: 10px;"
+            src="https://static.buffer.com/cdn-cgi/image/w=1200,quality=90,format=auto/marketing/static/screenshots/engagement-dashboard@2x.png">
+    </div>
+    <div id="con3">
         <div class="text1">
             <h1 style="width: 90%;">Never miss a comment</h1>
-            <p>The familiar grid view allows you to see which posts have unanswered comments and quickly jump from post to post.</p>
+            <p>The familiar grid view allows you to see which posts have unanswered comments and quickly jump from post
+                to post.</p>
         </div>
         <div>
-            <img src="https://static.buffer.com/cdn-cgi/image/w=640,quality=90,format=auto/marketing/static/screenshots/engage-comments@2x.jpg">
+            <img
+                src="https://static.buffer.com/cdn-cgi/image/w=640,quality=90,format=auto/marketing/static/screenshots/engage-comments@2x.jpg">
         </div>
-       </div>
-       <div id="con5">
+    </div>
+    <div id="con5">
         <h1 style="color:white">140,000+ people like you use Buffer to build their brand on social media every month
         </h1>
         <div class="btn3">
-        Get started now
+            Get started now
         </div>
-            </div>
+    </div>
+    <div id="main_footer"></div>
 
 </body>
+
 </html>
+<script type="module">
+    import main_navbar from '../components/main_navbar.js'
+    document.getElementById('main_navbar').innerHTML = (main_navbar())
+</script>
+<script type="module">
+    import footer from '../components/blog_footer.js'
+    document.getElementById('main_footer').innerHTML = (footer())
+
+</script>
