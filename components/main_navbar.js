@@ -1,7 +1,7 @@
 function main_navbar(){
     return ` <div id="header">
     <div id="img-1">
-    <a href="../mridul HTml/index.html"><img src="https://buffer.com/resources/content/images/2021/02/buffer-logo.svg" alt=""></a>
+    <a href="../index.html"><img src="https://buffer.com/resources/content/images/2021/02/buffer-logo.svg" alt=""></a>
     </div>
     <div id="img-2">
         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCI+DQo8cGF0aCBmaWxsPSIjM2E3NWM0IiBkPSJtMCwwaDEyMDB2ODAwaC0xMjAweiIvPg0KPHBhdGggZmlsbD0iI2Y5ZGQxNiIgZD0ibTAsNDAwaDEyMDB2NDAwaC0xMjAweiIvPg0KPC9zdmc+DQo="

@@ -1,7 +1,7 @@
 function Navbar(){
     return `  <div class="logo">
  
-    <a id="shiva" href="../mridul HTml/index.html"><h1>Buffer</h1></a>
+    <a id="shiva" href="../index.html"><h1>Buffer</h1></a>
     <img src="https://buffer.com/resources/content/images/2021/02/buffer-logo.svg" alt="Buffer Resources">
    
     
